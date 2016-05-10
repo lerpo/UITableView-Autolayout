@@ -105,24 +105,25 @@
          make.right.equalTo(self.hot.mas_left).with.offset(-5);
         
      }];
-        [self.date setContentCompressionResistancePriority:UILayoutPriorityDefaultLow forAxis:UILayoutConstraintAxisHorizontal];
-        
-
         self.date.backgroundColor = [UIColor blueColor];
+        
      [self.hot mas_makeConstraints:^(MASConstraintMaker *make) {
          
          make.top.equalTo(self.bottomView.mas_top).with.offset(5);
          make.right.equalTo(self.like.mas_left).with.offset(-5);
          make.bottom.equalTo(self.bottomView.mas_bottom).with.offset(-5);
      }];
-        [self.hot setContentCompressionResistancePriority:UILayoutPriorityDefaultHigh forAxis:UILayoutConstraintAxisHorizontal];
         self.hot.backgroundColor = [UIColor yellowColor];
+        
      [self.like mas_makeConstraints:^(MASConstraintMaker *make) {
          make.top.equalTo(self.bottomView.mas_top).with.offset(5);
          make.right.equalTo(self.bottomView.mas_right).with.offset(-5);
          make.bottom.equalTo(self.bottomView.mas_bottom).with.offset(-5);
      }];
         self.like.backgroundColor = [UIColor redColor];
+        
+        [self.date setContentCompressionResistancePriority:UILayoutPriorityDefaultLow forAxis:UILayoutConstraintAxisHorizontal];
+        [self.hot setContentCompressionResistancePriority:UILayoutPriorityDefaultHigh forAxis:UILayoutConstraintAxisHorizontal];
         [self.like setContentCompressionResistancePriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
        
         
