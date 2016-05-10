@@ -126,6 +126,10 @@ static NSString *CellIdentifier = @"CellIdentifier";
     
     
 }
+
+/**
+  * ios 8以上内置自动实现了计算行高的方法，下面的方法可以不用实现，ios 7下则必须要实现
+ */
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     PersonTableCellTableViewCell *cell  = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];

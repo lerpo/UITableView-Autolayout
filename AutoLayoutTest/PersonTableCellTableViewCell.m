@@ -42,8 +42,6 @@
         self.hot = [[UILabel alloc] init];
         self.hot.textAlignment = NSTextAlignmentRight;
        
-       
-        
         self.date = [[UILabel alloc] init];
         self.date.textAlignment = NSTextAlignmentLeft;
         
@@ -136,7 +134,6 @@
 -(void)layoutSubviews{
 
     [super layoutSubviews];
-    
     [self.contentView setNeedsLayout];
     [self.contentView layoutIfNeeded];
     self.summary.preferredMaxLayoutWidth = CGRectGetWidth(self.summary.frame);
